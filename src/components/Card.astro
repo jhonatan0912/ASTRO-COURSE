@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string;
+  content: string;
+}
+const { title, content } = Astro.props;
+---
+
+<div class="border rounded-md p-3 text-center flex flex-col gap-2">
+  <p class="text-sm">{content}</p>
+  <p>{title}</p>
+</div>
