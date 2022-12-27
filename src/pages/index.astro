@@ -1,15 +1,21 @@
 ---
+const hobbies = ["programming", "read", "sing", "write", "watch movies"];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<h1>Hello world</h1>
+<div class="p-5">
+	{
+		hobbies.map((item) => (
+			<>
+				<h3>{item}</h3>
+				<button class="p-2 px-4 rounded bg-zinc-800 text-white">Like</button>
+			</>
+		))
+	}
+</div>
+
+<style>
+	h1 {
+		color: skyblue;
+	}
+</style>
